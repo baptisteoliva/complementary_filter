@@ -63,9 +63,9 @@ for i, s in enumerate(samples[1:], 1):
     cfx[i] = (1.0 - alpha) * (cfx[i-1] + s.Rot_X*dt) + (alpha * s.acc_angX)
     cfy[i] = (1.0 - alpha) * (cfy[i-1] + s.Rot_Y*dt) + (alpha * s.acc_angY)
     cfz[i] = (1.0 - alpha) * (cfz[i-1] + s.Rot_Z*dt) + (alpha * s.acc_angZ)
-    x[i] = s.Rot_X*dt + s.acc_angX + s.G_X
-    y[i] = s.Rot_Y*dt + s.acc_angY + s.G_Y
-    z[i] = s.Rot_Z*dt + s.acc_angZ + s.G_Z 
+    x[i] = s.Rot_X*dt + s.acc_angX
+    y[i] = s.Rot_Y*dt + s.acc_angY
+    z[i] = s.Rot_Z*dt + s.acc_angZ
     
 
 """ ================================== Trace des courbes ================================================== """
